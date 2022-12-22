@@ -7,6 +7,7 @@
 
 import SwiftUI
 import struct Kingfisher.KFImage
+import SFSafeSymbols
 
 
 struct ContentView: View {
@@ -18,12 +19,27 @@ struct ContentView: View {
         VStack {
             //update so that you decode source name, author, description, url, urlToImage, and content
             // update display so that you can see the author and source name as well as the title
-            ScrollView{
-                ForEach(data.response.articles) { a in
-                    VStack{
-                        Text("\(a.title)")
-                            .padding()
-                    }
+            NavigationView {
+                ScrollView{
+                    ForEach(data.response.articles) { a in
+                        NavigationLink(destination: {
+                            SwiftUIWebView(url: URL(string: a.url))
+                        }, label: {
+                            VStack{
+                                KFImage(URL(string: a.urlToImage ?? " "))
+                                    .placeholder{
+                                        Image(systemName: SFSymbol._00CircleFill.rawValue)
+                                    }
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                
+                                Text("\(a.title)")
+                                    .padding()
+                            }
+                        })
+                        
+                        
+                    }.navigationTitle("Sports")
                 }
             }
             Spacer()

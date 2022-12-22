@@ -12,6 +12,7 @@
 		09796D6729476B580077206D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09796D6629476B580077206D /* Assets.xcassets */; };
 		09796D6A29476B580077206D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09796D6929476B580077206D /* Preview Assets.xcassets */; };
 		09796D7129476DE70077206D /* FetchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09796D7029476DE70077206D /* FetchData.swift */; };
+		0992705229548EA800CF3573 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0992705129548EA800CF3573 /* WebView.swift */; };
 		CFBD1AB45EE59A361A6DB0FF /* Pods_JSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B847AF1CF6133A6C5CFCE83 /* Pods_JSON.framework */; };
 /* End PBXBuildFile section */
 
@@ -22,6 +23,7 @@
 		09796D6629476B580077206D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09796D6929476B580077206D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		09796D7029476DE70077206D /* FetchData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchData.swift; sourceTree = "<group>"; };
+		0992705129548EA800CF3573 /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		7A9A0424C92A321982D5D08B /* Pods-JSON.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSON.release.xcconfig"; path = "Target Support Files/Pods-JSON/Pods-JSON.release.xcconfig"; sourceTree = "<group>"; };
 		9B847AF1CF6133A6C5CFCE83 /* Pods_JSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2161D93EEC6C55D1DE823AC /* Pods-JSON.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSON.debug.xcconfig"; path = "Target Support Files/Pods-JSON/Pods-JSON.debug.xcconfig"; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				09796D6429476B570077206D /* ContentView.swift */,
+				0992705129548EA800CF3573 /* WebView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -107,7 +110,6 @@
 				C2161D93EEC6C55D1DE823AC /* Pods-JSON.debug.xcconfig */,
 				7A9A0424C92A321982D5D08B /* Pods-JSON.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -226,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09796D6529476B570077206D /* ContentView.swift in Sources */,
+				0992705229548EA800CF3573 /* WebView.swift in Sources */,
 				09796D7129476DE70077206D /* FetchData.swift in Sources */,
 				09796D6329476B570077206D /* JSONApp.swift in Sources */,
 			);
