@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import struct Kingfisher.KFImage
+
 
 struct ContentView: View {
     
@@ -14,7 +16,6 @@ struct ContentView: View {
     var body: some View {
         
         VStack {
-            
             //update so that you decode source name, author, description, url, urlToImage, and content
             // update display so that you can see the author and source name as well as the title
             ScrollView{
@@ -23,18 +24,12 @@ struct ContentView: View {
                         Text("\(a.title)")
                             .padding()
                     }
-                    
                 }
             }
             Spacer()
-            
-            Button {
-                data.getData()
-            } label: {
-                Text("Click Me!")
-            }
+        }.task{
+            await data.getData()
         }
-        
     }
 }
 
